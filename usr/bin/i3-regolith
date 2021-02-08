@@ -1,0 +1,2 @@
+#!/bin/bash
+/etc/regolith/kde-session-init.sh & sleep 1 & /usr/bin/i3 -c /etc/regolith/i3/config

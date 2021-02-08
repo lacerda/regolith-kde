@@ -1,0 +1,7 @@
+i3-wm.window.border.size: 4
+i3-wm.floatingwindow.border.size: 4
+i3-wm.gaps.inner.size: 20
+i3-wm.bar.mode: hide
+i3-wm.bar.font: pango:hack 19
+gnome.wallpaper: /home/rafael/Pictures/wallpaper/rubber-plant.jpg
+i3-wm.client.focused.color.child_border: #d64a69

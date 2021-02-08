@@ -1,0 +1,183 @@
+!+ /usr/share/regolith-look/minimal/root (1612481939)
+regolith.look: minimal
+
+#include "/usr/share/regolith-look/minimal/color"
+#include "/usr/share/regolith-look/minimal/typeface"
+#include "/usr/share/regolith-look/minimal/theme"
+!+ /home/rafael/.config/regolith/Xresources (1612481939)
+i3-wm.window.border.size: 4
+i3-wm.floatingwindow.border.size: 4
+i3-wm.gaps.inner.size: 20
+i3-wm.bar.mode: hide
+i3-wm.bar.font: pango:hack 19
+gnome.wallpaper: /home/rafael/Pictures/wallpaper/6893714-blurred-wallpapers.jpg 
+i3-wm.client.focused.color.child_border: #8fbcbb
+!+ /etc/regolith/Xresources.d/gnome (1612481939)
+gnome.gtk.theme:          gtk_theme
+gnome.wm.theme:           gtk_theme
+gnome.icon.theme:         icon_theme
+gnome.wallpaper:          desktop_wallpaper
+gnome.terminal.font:      typeface_gnome_terminal
+gnome.terminal.scrollbar: theme_terminal_scrollbar
+
+!+ /etc/regolith/Xresources.d/i3-wm (1612481939)
+#define Q(x) #x
+#define QUOTE(x) Q(x)
+
+#define glyph typeface_bar_glyph_workspace
+
+i3-wm.font: typeface_wm
+i3-wm.bar.font: typeface_bar
+
+i3-wm.bar.position: i3wm_bar_position
+i3-wm.bar.background.color: color_base03
+i3-wm.bar.statusline.color: color_base1
+i3-wm.bar.separator.color: color_blue
+i3-wm.bar.workspace.focused.border.color: color_base02
+i3-wm.bar.workspace.focused.background.color: color_base02
+i3-wm.bar.workspace.focused.text.color: color_base2
+i3-wm.bar.workspace.active.border.color: color_base02
+i3-wm.bar.workspace.active.background.color: color_base02
+i3-wm.bar.workspace.active.text.color: color_base00
+i3-wm.bar.workspace.inactive.border.color: color_base03
+i3-wm.bar.workspace.inactive.background.color: color_base03
+i3-wm.bar.workspace.inactive.text.color: color_base00
+i3-wm.bar.workspace.urgent.border.color: color_red
+i3-wm.bar.workspace.urgent.background.color: color_red
+i3-wm.bar.workspace.urgent.text.color: color_base3
+
+i3-wm.client.focused.color.border: color_base03
+i3-wm.client.focused.color.background: color_base01
+i3-wm.client.focused.color.text: color_base3
+i3-wm.client.focused.color.indicator: color_blue
+i3-wm.client.focused.color.child_border: color_base01
+
+i3-wm.client.focused_inactive.color.border: color_base03
+i3-wm.client.focused_inactive.color.background: color_base02
+i3-wm.client.focused_inactive.color.text: color_base0
+i3-wm.client.focused_inactive.color.indicator: color_base02
+i3-wm.client.focused_inactive.color.child_border: color_base03
+
+i3-wm.client.unfocused.color.border: color_base03
+i3-wm.client.unfocused.color.background: color_base02
+i3-wm.client.unfocused.color.text: color_base0
+i3-wm.client.unfocused.color.indicator: color_base02
+i3-wm.client.unfocused.color.child_border: color_base03
+
+i3-wm.client.urgent.color.border: color_base03
+i3-wm.client.urgent.color.background: color_red
+i3-wm.client.urgent.color.text: color_base3
+i3-wm.client.urgent.color.indicator: color_red
+i3-wm.client.urgent.color.child_border: color_base03
+
+i3-wm.window.border.size: i3wm_window_border_size
+i3-wm.floatingwindow.border.size: i3wm_floatingwindow_border_size
+i3-wm.gaps.inner.size: i3wm_gaps_inner_size
+i3-wm.gaps.outer.size: i3wm_gaps_outer_size
+
+#define glyph_font QUOTE(typeface_bar_glyph)
+
+#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:<span> </span><span font_desc=FONT>INDEX </span><span foreground=COLOR>GLYPH</span><span> </span>
+
+i3-wm.workspace.01.name: WORKSPACE_NAME(1, glyph_font, QUOTE(color_blue), glyph)
+i3-wm.workspace.02.name: WORKSPACE_NAME(2, glyph_font, QUOTE(color_cyan), glyph)
+i3-wm.workspace.03.name: WORKSPACE_NAME(3, glyph_font, QUOTE(color_green), glyph)
+i3-wm.workspace.04.name: WORKSPACE_NAME(4, glyph_font, QUOTE(color_yellow), glyph)
+i3-wm.workspace.05.name: WORKSPACE_NAME(5, glyph_font, QUOTE(color_orange), glyph)
+i3-wm.workspace.06.name: WORKSPACE_NAME(6, glyph_font, QUOTE(color_red), glyph)
+i3-wm.workspace.07.name: WORKSPACE_NAME(7, glyph_font, QUOTE(color_magenta), glyph)
+i3-wm.workspace.08.name: WORKSPACE_NAME(8, glyph_font, QUOTE(color_violet), glyph)
+i3-wm.workspace.09.name: WORKSPACE_NAME(9, glyph_font, QUOTE(color_base1), glyph)
+i3-wm.workspace.10.name: WORKSPACE_NAME(10, glyph_font, QUOTE(color_blue), glyph)
+i3-wm.workspace.11.name: WORKSPACE_NAME(11, glyph_font, QUOTE(color_cyan), glyph)
+i3-wm.workspace.12.name: WORKSPACE_NAME(12, glyph_font, QUOTE(color_green), glyph)
+i3-wm.workspace.13.name: WORKSPACE_NAME(13, glyph_font, QUOTE(color_yellow), glyph)
+i3-wm.workspace.14.name: WORKSPACE_NAME(14, glyph_font, QUOTE(color_orange), glyph)
+i3-wm.workspace.15.name: WORKSPACE_NAME(15, glyph_font, QUOTE(color_red), glyph)
+i3-wm.workspace.16.name: WORKSPACE_NAME(16, glyph_font, QUOTE(color_magenta), glyph)
+i3-wm.workspace.17.name: WORKSPACE_NAME(17, glyph_font, QUOTE(color_violet), glyph)
+i3-wm.workspace.18.name: WORKSPACE_NAME(18, glyph_font, QUOTE(color_base1), glyph)
+i3-wm.workspace.19.name: WORKSPACE_NAME(19, glyph_font, QUOTE(color_blue), glyph)
+!+ /etc/regolith/Xresources.d/i3xrocks (1612481939)
+i3xrocks.label.color:       color_base0
+i3xrocks.value.color:       color_base1
+i3xrocks.value.font:        typeface_bar_glyph
+i3xrocks.critical.color:    color_red
+i3xrocks.error.color:       color_orange
+i3xrocks.warning:           color_yellow
+i3xrocks.nominal:           color_base0
+
+i3xrocks.label.thermometer: typeface_bar_glyph_thermometer
+
+i3xrocks.label.wifi: typeface_bar_glyph_wifi
+i3xrocks.label.wired: typeface_bar_glyph_wired
+i3xrocks.label.up: typeface_bar_glyph_up
+i3xrocks.label.dn: typeface_bar_glyph_dn
+
+i3xrocks.label.cpu: typeface_bar_glyph_cpu
+
+i3xrocks.label.disk: typeface_bar_glyph_disk
+
+i3xrocks.label.battery100: typeface_bar_glyph_battery_100
+i3xrocks.label.battery80: typeface_bar_glyph_battery_80
+i3xrocks.label.battery50: typeface_bar_glyph_battery_50
+i3xrocks.label.battery20: typeface_bar_glyph_battery_20
+i3xrocks.label.battery0: typeface_bar_glyph_battery_0
+i3xrocks.label.batterycharging: typeface_bar_glyph_battery_charging
+i3xrocks.label.batteryac: typeface_bar_glyph_battery_ac
+i3xrocks.label.batteryunknown: typeface_bar_glyph_battery_unknown
+
+i3xrocks.label.time: typeface_bar_glyph_time
+
+i3xrocks.label.mediaplaying: typeface_bar_glyph_media_playing
+i3xrocks.label.mediapaused: typeface_bar_glyph_media_paused
+i3xrocks.value.mediaplayerwidth: 25
+
+i3xrocks.label.notify.none: typeface_bar_glyph_notify_none
+i3xrocks.label.notify.some: typeface_bar_glyph_notify_some
+i3xrocks.label.notify.error: typeface_bar_glyph_notify_error
+
+i3xrocks.label.help: typeface_bar_glyph_help
+
+i3xrocks.label.sound: typeface_bar_glyph_sound
+i3xrocks.label.mute: typeface_bar_glyph_mute
+i3xrocks.label.memory: typeface_bar_glyph_memory
+
+i3xrocks.label.on: typeface_bar_glyph_on
+i3xrocks.label.off: typeface_bar_glyph_off
+
+i3xrocks.label.capslock: typeface_bar_glyph_capslock
+i3xrocks.label.numlock: typeface_bar_glyph_numlock
+
+i3xrocks.weather.error_message: typeface_bar_glyph_error
+
+i3xrocks.label.next-workspace-widget: typeface_bar_glyph_next_workspace
+!+ /etc/regolith/Xresources.d/rofi (1612481939)
+rofi.theme:                 rofi_theme
+rofi.font:                  typeface_rofi
+rofi.show-icons:            true
+rofi.icon-theme:            icon_theme
+rofi.drun-display-format:   {name}
+rofi.window-format:         \ {n} {t}
+rofi.modi:                  window,drun,run
+!+ /etc/regolith/Xresources.d/root (1612481939)
+! -- This points to the default looks Xresource root file.
+#include "/etc/regolith/styles/lascaille/root"
+!+ /etc/regolith/Xresources.d/st-term (1612481939)
+St.font:              typeface_terminal
+St.color0:            color_base03
+St.color1:            color_red     
+St.color2:            color_green       
+St.color3:            color_yellow       
+St.color4:            color_blue       
+St.color5:            color_magenta       
+St.color6:            color_cyan       
+St.color7:            color_base1       
+St.color8:            color_base00       
+St.color9:            color_orange      
+St.color10:           color_base01       
+St.color11:           color_base00       
+St.color12:           color_base0       
+St.color13:           color_violet       
+St.color14:           color_base1       
+St.color15:           color_base3

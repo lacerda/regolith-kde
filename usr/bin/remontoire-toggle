@@ -1,0 +1,12 @@
+#!/bin/bash
+# If remontoire is running, kill it.  Otherwise start it.
+
+REMONTOIRE_PID=$(ps aux | grep "[/]usr/bin/remontoire -c /etc/regolith/i3/config" | awk '{print $2}')
+
+if [ -z "$REMONTOIRE_PID" ]
+then
+    /usr/bin/remontoire -c /etc/regolith/i3/config &
+else
+    kill $REMONTOIRE_PID
+fi
+
