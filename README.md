@@ -1,6 +1,6 @@
 # Regolith under KDE (i3wm & Plasma)
 
-![Screenshot of Regolith running on KDE](https://github.com/lacerda/regolith-kde/blob/master/img/screenshot.png?raw=true)
+![Screenshot of Regolith running on KDE](img/screenshot.png)
 
 Regolith is a fantastic i3wm experience, particularly for those who don't want to set it up from scratch like myself.
 
